@@ -42,11 +42,13 @@ public class LoaderActivity extends BaseActivity {
     private final int PARSE_PROGRESS = 2;
     private final int LOADING_SUCCESS = 3;
     private final int SWITCH_TO_RESULT = 4;
+    //VPNGate server list
     private final String BASE_URL = "http://www.vpngate.net/api/iphone/";
     private final String BASE_FILE_NAME = "vpngate.csv";
 
     private boolean premiumStage = true;
 
+    // Another list for backup
     private final String PREMIUM_URL = "http://easyvpn.vasilkoff.com/?type=csv";
     private final String PREMIUM_FILE_NAME = "premiumServers.csv";
 

@@ -182,17 +182,19 @@
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
-                        <Button
-                            android:id="@+id/serverUnblockCheck"
-                            android:text="@string/unblock"
-                            style="@style/buttons"
-                            android:minHeight="25dp"
-                            android:textAllCaps="false"
-                            android:padding="5dp"
-                            android:layout_marginTop="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/serverUnblockCheck"
+                        style="@style/buttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="1dp"
+                        android:minHeight="25dp"
+                        android:padding="5dp"
+                        android:text="@string/unblock"
+                        android:textAllCaps="false"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -214,16 +216,17 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:gravity="center">
+
                 <Button
                     android:id="@+id/serverBtnCheckIp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="serverOnClick"
                     android:text="@string/what_is_my_ip"
                     android:textAllCaps="false"
-                    android:textSize="17sp"
                     android:textColor="@color/buttonBg"
-                    android:background="@null"
-                    android:onClick="serverOnClick"/>
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
